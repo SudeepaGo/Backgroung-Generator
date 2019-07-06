@@ -1,10 +1,19 @@
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5em;
-  top: 15%;
-  background: linear-gradient(to right, #2ed1c1, #b526d9);
+  background: linear-gradient(to right, rgb(45, 209, 192), rgb(181, 38, 217));
+  /* background: url("./download.png"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
 }
 
 h1 {
@@ -13,8 +22,45 @@ h1 {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.7em;
+  }
+  h2 {
+    font-size: 1.4em;
+  }
+}
+
 h3 {
   font: 900 1em "Raleway", sans-serif;
   text-transform: none;
   letter-spacing: 0.01em;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+  display: none;
+}
+
+button {
+  font: 700 0.9em "Raleway", sans-serif;
+  letter-spacing: 0.01em;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fafafa;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.7);
 }
